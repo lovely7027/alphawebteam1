@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+
+    background-image: linear-gradient(157deg, rgb(38, 0, 255), rgb(0, 255, 255));
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.button {
+
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 30px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 800px;
+}
+
+nav ul li a:hover {
+
+    color: rgb(35, 3, 175);
+}
+
+/* ---------------body part-------------------------- */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+
+}
+
+.col-1 {
+
+
+    width: 50%;
+    flex: 1;
+    position: relative;
+    margin-left: 20px;
+    color: #fff;
+    text-shadow: 0.8px 1px black;
+    text-align: center;
+    padding: 0 1rem;
+
+}
+
+.col-1 h1 {
+    font-size: 50px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+
+.col-1 p {
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 200px;
+    font-size: 17px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.image img {
+    width: 80%;
+}
+
+.image {
+
+    width: 50%;
+    text-align: center;
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+
+    }
+
+    .col-1 {
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+}
